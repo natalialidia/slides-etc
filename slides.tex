@@ -1,0 +1,325 @@
+% Copyright (c) 2022 by Lars Spreng
+% This work is licensed under the Creative Commons Attribution 4.0 International License. 
+% To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+% You can add your packages and commands to the loadslides.tex file. 
+% The files in the folder "styles" can be modified to change the layout and design of your slides.
+% I have included examples on how to use the template below. 
+% Some of these examples are taken from the Metropolis template.
+%~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+\documentclass[
+12pt,notheorems,hyperref={pdfauthor=whatever}
+]{beamer}
+
+\input{loadslides.tex} % Loads packages and some defined commands
+
+\title[
+    Caracterizando facetas do politopo do Subgrafo Gerador Balanceado Máximo via comutação
+]{Caracterizando facetas do politopo do Subgrafo Gerador Balanceado Máximo via comutação}
+
+\author[
+% Text entered here will appear in the bottom left corner
+]{
+    Natália Coelho, Manoel Campêlo
+}
+
+\institute{
+    Universidade Federal do Ceará}
+\date{Julho, 2026}
+
+\begin{document}
+
+% Generate title page
+{
+\setbeamertemplate{footline}{} 
+\begin{frame}[plain]
+    \begin{tikzpicture}[remember picture,overlay]
+    \node[
+        opacity=0.1,
+        inner sep=0pt
+    ] at (current page.center)
+    {\includegraphics[width=0.9\paperwidth]{figures/capa-ufc.png}};
+    \end{tikzpicture}
+
+  \titlepage
+\end{frame}
+}
+\addtocounter{framenumber}{-1}
+
+% You can declare different parts as a parentof sections
+% \begin{frame}[allowframebreaks]{Sumário}
+%     \tableofcontents
+% \end{frame}
+
+\section{Introdução}
+
+\subsection{Definições preliminares}
+\begin{frame}[fragile]
+	\begin{definition}[\cite{harary1953notion}]
+		Um \textbf{grafo de sinais} é um grafo $G = (V, E, \sigma)$, em que $\sigma$ é uma função $\sigma: E \to \{+,-\}$.
+	\end{definition}
+	\begin{minipage}[h][12em][c]{\textwidth}
+		\centering%
+			\vspace{1em}
+		\input{figures/signed-graph-ex.tex}
+		\captionof{figure}{\footnotesize Grafo de sinais.}
+		\label{fig:bis-instance}
+	\end{minipage}
+\end{frame}
+\begin{frame}
+    \begin{definition}[\cite{harary1953notion}]
+		Um grafo de sinais é dito \textbf{balanceado} se $V$ pode ser particionado em dois conjuntos $S \subseteq V$ e $\bar{S} = V \backslash S$, de forma que: 
+        \begin{center}
+            $E^+ = E(S) \cup E(\bar{S})$ e $E^- = \delta(S)$
+        \end{center}
+	\end{definition}
+	\begin{minipage}[h][12em][c]{\textwidth}
+		\centering%
+		\input{figures/bal-ex.tex}
+        \captionof{figure}{\footnotesize Grafo de sinais balanceado.}
+	\end{minipage}
+\end{frame}
+\begin{frame}
+    \begin{definition}
+        Um ciclo em um grafo de sinais é chamado de \textbf{\textit{ciclo negativo}} se possuir um número \textbf{ímpar} de arestas negativas.
+    \end{definition}
+    % \vspace{2em}
+    \begin{minipage}[h][10em][c]{\textwidth}
+		\centering%
+		\input{figures/ex-ciclo-neg}
+        \vspace{2em}
+		\small{\captionof{figure}{\footnotesize Ciclo negativo.}}
+	\end{minipage}
+    \vspace{-2.5em}
+    \pause
+    \begin{theorem}[\cite{cartwright1956structural}]\label{teo:neg-cycle}
+        Um grafo de sinais é balanceado se, e somente se, não possuir ciclos negativos.
+    \end{theorem}
+\end{frame}
+
+\subsection{Definição do problema}
+\begin{frame}
+    \textsc{\textbf{\color{primary} Subgrafo Gerador Balanceado Máximo (MBSS)}}.
+    \vspace{0.25em}
+
+    {\itshape
+    \noindent\textbf{Entrada:} Um grafo de sinais $G=(V,E, \sigma)$.
+
+    \noindent\textbf{Objetivo:} Encontrar um subconjunto de arestas $E' \subseteq E$, de tamanho máximo, que gera um subgrafo balanceado.}
+    \pause
+    \vspace{1em}
+    \begin{minipage}[h][8em][c]{\textwidth}
+		\centering%
+		\input{figures/frustration-ex}
+		\small{\captionof{figure}{\footnotesize Subgrafo Gerador Balanceado Máximo \textcolor{c1}{$E'$}.}}
+	\end{minipage}
+    \pause
+
+    \vspace{1em}
+    {\small\alert{O problema é \textbf{NP}-Difícil, pois é generalização do \textsc{Max-Cut}.}}
+\end{frame}
+
+\subsection{Comutação}
+\begin{frame}
+   
+    \begin{definition}
+        Uma \textbf{comutação} de um grafo de sinais $G$ é o grafo resultante $G^S$ da troca dos sinais de todas as arestas em $\delta(S), \forall S \subseteq V(G)$.
+    \end{definition}
+    \begin{figure}[h]
+        \centering
+        \vspace{1em}
+        \input{figures/comutacao-ex}
+        \small{\captionof{figure}{\footnotesize Exemplo de grafo comutado.}}
+    \end{figure}
+
+    \pause
+    \vspace{1em}
+    \alert{MBSS definido em $G$ equivale ao MBSS definido em $G^S$ [\cite{Zaslavsky1982}]}
+
+\end{frame}
+
+\section{Formulações de PI para o MBSS}
+\subsection{Modelo XOR}
+\begin{frame}
+    \begin{block}{Modelo XOR [\cite{aref2020modeling}]}
+        \begingroup
+            \begin{center}
+                \footnotesize
+                $x_u=
+                \begin{cases}
+                    1, \text{\footnotesize se o vértice u está na partição um}\\
+                    0, \text{\footnotesize c.c}
+                \end{cases}
+                \text{$, \forall u \in V$}
+                \;
+                y_{uv}=
+                \begin{cases}
+                    1, \text{\footnotesize se uv é removida do subgrafo gerador}\\
+                    0, \text{\footnotesize c.c}
+                \end{cases}
+                \text{$, \forall uv \in E$}
+                $
+            \end{center}
+            \begin{align} 
+                 \min\:\:&\sum_{uv \in E} y_{uv} & & \\
+                \text{s.a}:\:&x_u-x_v \leq y_{uv} &\forall uv\in E^+ \label{eq:pos1}\\
+                &x_v-x_u \leq y_{uv} &\forall uv\in E^+ \label{eq:pos2}\\
+                &1 - x_u - x_v \leq y_{uv} &\forall uv\in E^- \label{eq:neg1}\\
+                & x_u+x_v -1 \leq y_{uv} &\forall uv\in E^- \label{eq:neg2}\\
+                &x_u \in \{0,1\} &\forall u \in V\\
+                &y_{uv} \in \{0,1\} &\forall uv \in E \label{eq:ybin}
+            \end{align}  
+        \endgroup
+    \end{block}
+\end{frame}
+
+\subsection{Desigualdade de ciclos negativos}
+\begin{frame}
+    Seja $C^-$ o conjunto de todos os ciclos negativos em $G$, então
+    \vspace{1em}
+    \begin{align}
+		\qquad \sum_{uv \in E(C)} y_{uv} \geq 1,\quad\forall C \in C^- \label{NEC}
+	\end{align}
+    é válida.
+
+    \pause
+    \vspace{1em}
+    {\small\alert{O número possivelmente exponencial de restrições pode demandar um procedimento de separação.}}
+    
+\end{frame}
+
+\subsection{Preliminares do politopo}
+\begin{frame}
+    \begin{equation*}
+        \PxG = \mathrm{conv}\{(x,y) \in \R^{n+m} : (x,y) \text{ satisfaz \eqref{eq:pos1}--\eqref{eq:ybin}} \}.
+    \end{equation*}
+    \pause
+    \begin{theorem}
+        O politopo $\PxG$ tem dimensão cheia.    \\[0.5em]
+    \end{theorem}
+
+    \begin{proposition} \label{prop:facetax-trivial}
+        {Para todo $u\in V(G)$, $x_u\geq 0$ e $x_u\leq 1$ induzem faceta de $\PxG$.}\\[0.5em]
+    \end{proposition}
+
+    \begin{proposition}
+        Para todo $uv\in E(G)$, $y_{uv}\leq 1$ induz faceta de $\PxG$.\\[0.5em]
+    \end{proposition}
+        
+\end{frame}
+
+\begin{frame}
+    \begin{lemma}\label{lem:sub-ind}
+        Seja $H$ um subgrafo de $G$. A desigualdade $\sum\limits_{v\in V(H)}\lambda_vx_v+\sum\limits_{e\in E(H)}\rho_{e}y_e\geq \lambda_0$ define faceta de $\Px(H)$ se, e somente se, ela também define faceta de $\PxG$.\\[1em]
+    \end{lemma}
+\end{frame}
+
+\section{Obtendo facetas via comutação}
+\subsection{Correspondência de soluções válidas}
+\begin{frame}
+    \begin{lemma} \label{lem:points}
+    Sejam $S \subseteq V$ e $\bar S=V\setminus S$.
+    $(x_S,x_{\bar S},y)$ é um ponto inteiro em $\PxG$ se, e somente se, $(\e-x_S,x_{\bar S},y)$ é um ponto inteiro em $\Px(G^S)$.
+    \end{lemma}
+
+    \begin{cor} \label{cor:points}
+        $(x,y)$ é um ponto inteiro em $\PxG$ se, e somente se, $(\e-x,y)$ é um ponto inteiro em $\PxG$.
+    \end{cor}
+\end{frame}
+
+\subsection{Correspondência de pontos A.I.}
+\begin{frame}
+    \begin{lemma} \label{lem:AI}
+        Sejam $S \subseteq V$, $\bar S=V\setminus S$ {e $L\subseteq \{1,\ldots,n+m+1\}$.}
+        $\{(x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$ se, e somente se, $\{(\e-x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\Px(G^S)$.
+    \end{lemma}
+
+
+    \begin{cor} \label{cor:AI}
+        {Seja $L\subseteq \{1,\ldots,n+m+1\}$.}
+        $\{(x^\ell,y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$ se, e somente se, $\{(\e-x^\ell,y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$.
+    \end{cor}
+\end{frame}
+
+\begin{frame}
+    
+    \begin{proposition}\label{prop:valid}
+        Sejam $S\subseteq V$ e $\bar S=V\setminus S$.\\[0.5em]
+        \pause
+        $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda y \leq \pi_0$ é válida para $\PxG$ $\iff $ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda y \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
+        \pause
+        A primeira desigualdade define faceta de $\PxG$ $\iff$ a segunda define faceta de $\Px(G^S)$.
+    \end{proposition}
+    \pause
+    \begin{theorem}\label{teo:valid-comutacao-parcial}
+        $H$ um grafo de sinais, $S\subseteq V(H)$ e $S'=V(H)\setminus S$.\\[0.5em]
+        \pause
+        {Suponha que $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $\tilde G$. \\[0.5em]
+        \pause
+         $\pi_S x_S + \pi_{S'} x_{S'} + \lambda_{E(H)} y_{E(H)} \leq \pi_0$ define faceta de $\PxG$ $\iff$ $\pi_S(\e -x_S) + \pi_{S'} x_{S'} +  \lambda_{E(H)} y_{E(H)} \leq \pi_0$ define faceta de $\Px(\tilde G)$.}
+    \end{theorem}
+
+    \pause
+
+    \begin{cor}
+        Todas as restrições da formulação XOR são facetas de $\PxG$.
+    \end{cor}
+
+\end{frame}
+
+\subsection{Facetas de ciclos negativos}
+
+\begin{frame}
+    \begin{lemma} \label{lem:ciclo1}
+        {Se $C$ é um ciclo com uma única aresta negativa, então a desigualdade
+        \begin{equation}\label{eq:ciclo1}
+        \sum_{e\in E(C)}y_e \geq 1   
+        \end{equation}
+        define faceta de $\Px(C)$.}
+    \end{lemma}
+\end{frame}
+
+
+\begin{frame}
+    \begin{theorem}
+        {Se $C$ é um ciclo negativo de $G$, então a desigualdade \eqref{eq:ciclo1} define faceta de $\PxG$.}\\[1em]
+    \end{theorem}
+    \vspace{2em}
+
+     \begin{minipage}[h][10em][c]{\textwidth}
+		\centering%
+		\input{figures/ciclo-comut-ex}
+        \vspace{4em}
+		{\captionof{figure}{\footnotesize Comutação de ciclo negativo.}}
+	\end{minipage}
+
+\end{frame}
+
+\section{}
+
+\begin{frame}{}{}
+    \vfill
+    \begin{center}
+    {\Large Obrigada!}
+    \end{center}
+
+    \vfill
+
+    \begin{figure}
+    \centering
+    \includegraphics[height=1.5cm]{figures/logopqno.png}\hspace{1cm}
+    \includegraphics[height=0.7cm]{figures/pargo.png}\hspace{1cm}
+    \includegraphics[height=0.7cm]{figures/mdcc-cabecalho.png}\hspace{1cm}
+    \includegraphics[height=0.7cm]{figures/funcap.png}\hspace{1cm}
+    \includegraphics[height=1.5cm]{figures/cnpq.png}
+    \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Referências}
+    \printbibliography
+\end{frame}
+
+\end{document}

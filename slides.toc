@@ -1,0 +1,12 @@
+\beamer@sectionintoc {1}{Introdução\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 1}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Definições preliminares\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 1}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Definição do problema\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 4}{6}{0}{1}
+\beamer@subsectionintoc {1}{3}{Comutação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 5}{9}{0}{1}
+\beamer@sectionintoc {2}{Formulações de PI para o MBSS\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 6}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{Modelo XOR\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 6}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Desigualdade de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 7}{12}{0}{2}
+\beamer@subsectionintoc {2}{3}{Preliminares do politopo\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 8}{14}{0}{2}
+\beamer@sectionintoc {3}{Obtendo facetas via comutação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 10}{17}{0}{3}
+\beamer@subsectionintoc {3}{1}{Correspondência de soluções válidas\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 10}{17}{0}{3}
+\beamer@subsectionintoc {3}{2}{Correspondência de pontos A.I.\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 11}{18}{0}{3}
+\beamer@subsectionintoc {3}{3}{Facetas de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{26}{0}{3}
