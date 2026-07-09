@@ -109,6 +109,7 @@
     \noindent\textbf{Entrada:} Um grafo de sinais $G=(V,E, \sigma)$.
 
     \noindent\textbf{Objetivo:} Encontrar um subconjunto de arestas $E' \subseteq E$, de tamanho máximo, que gera um subgrafo balanceado.}
+
     \pause
     \vspace{1em}
     \begin{minipage}[h][8em][c]{\textwidth}
@@ -150,10 +151,10 @@
                 \footnotesize
                 $x_u=
                 \begin{cases}
-                    1, \text{\footnotesize se o vértice u está na partição um}\\
+                    1, \text{\footnotesize se u está na partição um}\\
                     0, \text{\footnotesize c.c}
                 \end{cases}
-                \text{$, \forall u \in V$}
+                \text{$,\forall u \in V$}
                 \;
                 y_{uv}=
                 \begin{cases}
@@ -187,11 +188,11 @@
 
     \pause
     \vspace{1em}
-    {\small\alert{O número possivelmente exponencial de restrições pode demandar um procedimento de separação.}}
+    {\alert{Número possivelmente exponencial de restrições!}}
     
 \end{frame}
 
-\subsection{Preliminares do politopo}
+\subsection{Politopo associado à formulação}
 \begin{frame}
     \begin{equation*}
         \PxG = \mathrm{conv}\{(x,y) \in \R^{n+m} : (x,y) \text{ satisfaz \eqref{eq:pos1}--\eqref{eq:ybin}} \}.
@@ -220,58 +221,93 @@
 \section{Obtendo facetas via comutação}
 \subsection{Correspondência de soluções válidas}
 \begin{frame}
+    
+    Sejam $S \subseteq V(G)$ e $\bar S=V(G)\setminus S$.
     \begin{lemma} \label{lem:points}
-    Sejam $S \subseteq V$ e $\bar S=V\setminus S$.
-    $(x_S,x_{\bar S},y)$ é um ponto inteiro em $\PxG$ se, e somente se, $(\e-x_S,x_{\bar S},y)$ é um ponto inteiro em $\Px(G^S)$.
+        $(x_S,x_{\bar S},y)$ é um ponto inteiro em $\PxG$ $\iff$ $(\e-x_S,x_{\bar S},y)$ é um ponto inteiro em $\Px(G^S)$.
     \end{lemma}
+    \pause
 
-    \begin{cor} \label{cor:points}
-        $(x,y)$ é um ponto inteiro em $\PxG$ se, e somente se, $(\e-x,y)$ é um ponto inteiro em $\PxG$.
-    \end{cor}
+    \begin{figure}[h]
+        \centering
+        \input{figures/sol-comut.tex}
+        {\captionof{figure}{\footnotesize Correspondência de soluções.}}
+    \end{figure}
+    
+    \vspace{-0.8em}
+    \only<5>{
+        \begin{lemma} \label{lem:AI}
+            Seja $L\subseteq \{1,\ldots,n+m+1\}$,
+            $\{(x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\PxG$ $\iff$ $\{(\e-x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\Px(G^S)$.
+        \end{lemma}
+    }
 \end{frame}
 
-\subsection{Correspondência de pontos A.I.}
-\begin{frame}
-    \begin{lemma} \label{lem:AI}
-        Sejam $S \subseteq V$, $\bar S=V\setminus S$ {e $L\subseteq \{1,\ldots,n+m+1\}$.}
-        $\{(x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$ se, e somente se, $\{(\e-x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\Px(G^S)$.
-    \end{lemma}
-
-
-    \begin{cor} \label{cor:AI}
-        {Seja $L\subseteq \{1,\ldots,n+m+1\}$.}
-        $\{(x^\ell,y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$ se, e somente se, $\{(\e-x^\ell,y^\ell): \ell\in L\}$ é um conjunto de pontos afim independente em $\PxG$.
-    \end{cor}
-\end{frame}
-
+\subsection{Correspondência de facetas}
 \begin{frame}
     
     \begin{proposition}\label{prop:valid}
-        Sejam $S\subseteq V$ e $\bar S=V\setminus S$.\\[0.5em]
+        Sejam $S\subseteq V$ e $\bar S=V\setminus S$:\\[0.5em]
         \pause
-        $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda y \leq \pi_0$ é válida para $\PxG$ $\iff $ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda y \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
-        \pause
-        A primeira desigualdade define faceta de $\PxG$ $\iff$ a segunda define faceta de $\Px(G^S)$.
+        \begin{itemize}
+            \item $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda y \leq \pi_0$ é válida para $\PxG$ $\iff $ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda y \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
+            \pause
+            \item A primeira desigualdade induz faceta de $\PxG$ $\iff$ a segunda induz faceta de $\Px(G^S)$.
+        \end{itemize}
     \end{proposition}
     \pause
     \begin{theorem}\label{teo:valid-comutacao-parcial}
-        $H$ um grafo de sinais, $S\subseteq V(H)$ e $S'=V(H)\setminus S$.\\[0.5em]
+        Sejam $H$ e $S\subseteq V(H)$ e $\bar S=V(H)\setminus S$:\\[0.5em]
         \pause
-        {Suponha que $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $\tilde G$. \\[0.5em]
-        \pause
-         $\pi_S x_S + \pi_{S'} x_{S'} + \lambda_{E(H)} y_{E(H)} \leq \pi_0$ define faceta de $\PxG$ $\iff$ $\pi_S(\e -x_S) + \pi_{S'} x_{S'} +  \lambda_{E(H)} y_{E(H)} \leq \pi_0$ define faceta de $\Px(\tilde G)$.}
+        \begin{itemize}
+            \item $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $G'$. \\[0.5em]
+            \pause
+            \item $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda_{E(H)} y_{E(H)} \leq \pi_0$ induz faceta de $\PxG$ $\iff$ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda_{E(H)} y_{E(H)} \leq \pi_0$ induz faceta de $\Px(G')$.
+        \end{itemize}
     \end{theorem}
-
-    \pause
-
-    \begin{cor}
-        Todas as restrições da formulação XOR são facetas de $\PxG$.
-    \end{cor}
 
 \end{frame}
 
-\subsection{Facetas de ciclos negativos}
+\subsection{Exemplo de aplicação}
 
+\begin{frame}
+
+    \begin{prop}
+        As restrições da formulação XOR induzem facetas de $\PxG$.
+    \end{prop}
+
+    \only<1>{
+        \begin{equation*}
+            x_u - x_v \leq y_{uv}
+        \end{equation*}
+    }
+    \only<2>{
+        \begin{equation*}
+            (1-x_u) - x_v \leq y_{uv}
+        \end{equation*}
+    }
+    \only<3>{
+        \begin{equation*}
+            (1-x_u) - (1 - x_v) \leq y_{uv}
+        \end{equation*}
+    }
+    \only<4>{
+        \begin{equation*}
+            x_u - (1- x_v) \leq y_{uv}
+        \end{equation*}
+    }
+
+    \vspace{-.5em}
+    \begin{figure}[h]
+        \centering
+        \input{figures/comut-aresta.tex}
+        {\captionof{figure}{\footnotesize Comutações de aresta positiva.}}
+    \end{figure}
+    
+\end{frame}
+
+\section{Facetas de ciclos negativos}
+\subsection{Ciclos com uma aresta negativa}
 \begin{frame}
     \begin{lemma} \label{lem:ciclo1}
         {Se $C$ é um ciclo com uma única aresta negativa, então a desigualdade
@@ -282,7 +318,7 @@
     \end{lemma}
 \end{frame}
 
-
+\subsection{Ciclos negativos arbitrários}
 \begin{frame}
     \begin{theorem}
         {Se $C$ é um ciclo negativo de $G$, então a desigualdade \eqref{eq:ciclo1} define faceta de $\PxG$.}\\[1em]
@@ -311,8 +347,8 @@
     \begin{figure}
     \centering
     \includegraphics[height=1.5cm]{figures/logopqno.png}\hspace{1cm}
-    \includegraphics[height=0.7cm]{figures/pargo.png}\hspace{1cm}
     \includegraphics[height=0.7cm]{figures/mdcc-cabecalho.png}\hspace{1cm}
+    \includegraphics[height=0.7cm]{figures/pargo.png}\hspace{1cm}
     \includegraphics[height=0.7cm]{figures/funcap.png}\hspace{1cm}
     \includegraphics[height=1.5cm]{figures/cnpq.png}
     \end{figure}

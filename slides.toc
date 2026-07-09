@@ -5,8 +5,11 @@
 \beamer@sectionintoc {2}{Formulações de PI para o MBSS\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 6}{11}{0}{2}
 \beamer@subsectionintoc {2}{1}{Modelo XOR\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 6}{11}{0}{2}
 \beamer@subsectionintoc {2}{2}{Desigualdade de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 7}{12}{0}{2}
-\beamer@subsectionintoc {2}{3}{Preliminares do politopo\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 8}{14}{0}{2}
+\beamer@subsectionintoc {2}{3}{Politopo associado à formulação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 8}{14}{0}{2}
 \beamer@sectionintoc {3}{Obtendo facetas via comutação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 10}{17}{0}{3}
 \beamer@subsectionintoc {3}{1}{Correspondência de soluções válidas\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 10}{17}{0}{3}
-\beamer@subsectionintoc {3}{2}{Correspondência de pontos A.I.\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 11}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{Facetas de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{26}{0}{3}
+\beamer@subsectionintoc {3}{2}{Correspondência de facetas\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 11}{22}{0}{3}
+\beamer@subsectionintoc {3}{3}{Exemplo de aplicação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 12}{28}{0}{3}
+\beamer@sectionintoc {4}{Facetas de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{32}{0}{4}
+\beamer@subsectionintoc {4}{1}{Ciclos com uma aresta negativa\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{32}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ciclos negativos arbitrários\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 14}{33}{0}{4}

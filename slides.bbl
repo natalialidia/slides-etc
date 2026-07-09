@@ -18,151 +18,6 @@
 
 
 \refsection{0}
-  \datalist[entry]{apa/apasortcite//global/global}
-    \entry{aref2020modeling}{article}{}
-      \name{author}{3}{}{%
-        {{hash=a4d69dcaea77c1fbe97c112e7a7704f5}{%
-           family={Aref},
-           familyi={A\bibinitperiod},
-           given={Samin},
-           giveni={S\bibinitperiod}}}%
-        {{hash=065dc7d392e2148d1e7e48d11a1651e2}{%
-           family={Mason},
-           familyi={M\bibinitperiod},
-           given={Andrew\bibnamedelima J},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=73922b4b866b9840f6d45d95ddebfa8e}{%
-           family={Wilson},
-           familyi={W\bibinitperiod},
-           given={Mark\bibnamedelima C},
-           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Wiley Online Library}%
-      }
-      \strng{namehash}{2d9c33759acf7312b71bb1da8319b59c}
-      \strng{fullhash}{64da9d21a1654ead5c4678cf8d289ead}
-      \strng{bibnamehash}{64da9d21a1654ead5c4678cf8d289ead}
-      \strng{authorbibnamehash}{64da9d21a1654ead5c4678cf8d289ead}
-      \strng{authornamehash}{2d9c33759acf7312b71bb1da8319b59c}
-      \strng{authorfullhash}{64da9d21a1654ead5c4678cf8d289ead}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Networks}
-      \field{number}{1}
-      \field{title}{A modeling and computational study of the frustration index in signed networks}
-      \field{volume}{75}
-      \field{year}{2020}
-      \field{pages}{95\bibrangedash 110}
-      \range{pages}{16}
-    \endentry
-    \entry{cartwright1956structural}{article}{}
-      \name{author}{2}{}{%
-        {{hash=4cd2079f622879e0d5ac5595458915d5}{%
-           family={Cartwright},
-           familyi={C\bibinitperiod},
-           given={Dorwin},
-           giveni={D\bibinitperiod}}}%
-        {{hash=e3160b3da4830dc2704b52726168a61f}{%
-           family={Harary},
-           familyi={H\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {American Psychological Association}%
-      }
-      \strng{namehash}{9ff764f12cd2f615636098cf34ef80f4}
-      \strng{fullhash}{9ff764f12cd2f615636098cf34ef80f4}
-      \strng{bibnamehash}{9ff764f12cd2f615636098cf34ef80f4}
-      \strng{authorbibnamehash}{9ff764f12cd2f615636098cf34ef80f4}
-      \strng{authornamehash}{9ff764f12cd2f615636098cf34ef80f4}
-      \strng{authorfullhash}{9ff764f12cd2f615636098cf34ef80f4}
-      \field{sortinit}{C}
-      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Psychological review}
-      \field{number}{5}
-      \field{title}{Structural balance: a generalization of Heider's theory.}
-      \field{volume}{63}
-      \field{year}{1956}
-      \field{pages}{277}
-      \range{pages}{1}
-    \endentry
-    \entry{harary1953notion}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e3160b3da4830dc2704b52726168a61f}{%
-           family={Harary},
-           familyi={H\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {University of Michigan, Department of Mathematics}%
-      }
-      \strng{namehash}{e3160b3da4830dc2704b52726168a61f}
-      \strng{fullhash}{e3160b3da4830dc2704b52726168a61f}
-      \strng{bibnamehash}{e3160b3da4830dc2704b52726168a61f}
-      \strng{authorbibnamehash}{e3160b3da4830dc2704b52726168a61f}
-      \strng{authornamehash}{e3160b3da4830dc2704b52726168a61f}
-      \strng{authorfullhash}{e3160b3da4830dc2704b52726168a61f}
-      \field{sortinit}{H}
-      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Michigan Mathematical Journal}
-      \field{number}{2}
-      \field{title}{On the notion of balance of a signed graph.}
-      \field{volume}{2}
-      \field{year}{1953}
-      \field{pages}{143\bibrangedash 146}
-      \range{pages}{4}
-    \endentry
-    \entry{Zaslavsky1982}{article}{}
-      \name{author}{1}{}{%
-        {{hash=3c9d0a64948e16534d3f1787ae1772f2}{%
-           family={Zaslavsky},
-           familyi={Z\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \strng{fullhash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \strng{bibnamehash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \strng{authorbibnamehash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \strng{authornamehash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \strng{authorfullhash}{3c9d0a64948e16534d3f1787ae1772f2}
-      \field{sortinit}{Z}
-      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Discrete Applied Mathematics}
-      \field{number}{1}
-      \field{title}{Signed Graphs}
-      \field{volume}{4}
-      \field{year}{1982}
-      \field{pages}{47\bibrangedash 74}
-      \range{pages}{28}
-      \verb{doi}
-      \verb 10.1016/0166-218X(82)90033-6
-      \endverb
-    \endentry
-  \enddatalist
   \datalist[entry]{apa/global//global/global}
     \entry{aref2020modeling}{article}{}
       \name{author}{3}{}{%
@@ -194,7 +49,7 @@
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -231,7 +86,7 @@
       \field{sortinit}{C}
       \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -263,7 +118,7 @@
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
@@ -292,7 +147,7 @@
       \field{sortinit}{Z}
       \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}

@@ -9,10 +9,7 @@
 \beamer@slide {prop:facetax-trivial}{14}
 \beamer@slide {lem:sub-ind}{16}
 \beamer@slide {lem:points}{17}
-\beamer@slide {cor:points}{17}
-\beamer@slide {lem:AI}{18}
-\beamer@slide {cor:AI}{18}
-\beamer@slide {prop:valid}{19}
-\beamer@slide {teo:valid-comutacao-parcial}{19}
-\beamer@slide {lem:ciclo1}{26}
-\beamer@slide {eq:ciclo1}{26}
+\beamer@slide {prop:valid}{22}
+\beamer@slide {teo:valid-comutacao-parcial}{22}
+\beamer@slide {lem:ciclo1}{32}
+\beamer@slide {eq:ciclo1}{32}
