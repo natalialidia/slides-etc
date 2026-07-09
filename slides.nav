@@ -41,38 +41,38 @@
 \headcommand {\sectionentry {3}{Obtendo facetas via comutação}{17}{Obtendo facetas via comutação}{0}}
 \headcommand {\beamer@subsectionpages {17}{16}}
 \headcommand {\beamer@subsectionentry {0}{3}{1}{17}{Correspondência de soluções válidas}}
-\headcommand {\slideentry {3}{1}{1}{17/21}{Correspondência de soluções válidas}{0}}
-\headcommand {\beamer@framepages {17}{21}}
-\headcommand {\beamer@subsectionpages {17}{21}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{22}{Correspondência de facetas}}
-\headcommand {\slideentry {3}{2}{1}{22/27}{Correspondência de facetas}{0}}
-\headcommand {\beamer@framepages {22}{27}}
-\headcommand {\beamer@subsectionpages {22}{27}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{28}{Exemplo de aplicação}}
-\headcommand {\slideentry {3}{3}{1}{28/31}{Exemplo de aplicação}{0}}
-\headcommand {\beamer@framepages {28}{31}}
-\headcommand {\beamer@sectionpages {17}{31}}
-\headcommand {\beamer@subsectionpages {28}{31}}
-\headcommand {\sectionentry {4}{Facetas de ciclos negativos}{32}{Facetas de ciclos negativos}{0}}
-\headcommand {\beamer@subsectionpages {32}{31}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{32}{Ciclos com uma aresta negativa}}
-\headcommand {\slideentry {4}{1}{1}{32/32}{Ciclos com uma aresta negativa}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{33}{Ciclos negativos arbitrários}}
-\headcommand {\slideentry {4}{2}{1}{33/38}{Ciclos negativos arbitrários}{0}}
-\headcommand {\beamer@framepages {33}{38}}
-\headcommand {\beamer@sectionpages {32}{38}}
-\headcommand {\beamer@subsectionpages {33}{38}}
-\headcommand {\slideentry {5}{0}{1}{39/39}{}{0}}
-\headcommand {\beamer@framepages {39}{39}}
-\headcommand {\beamer@sectionpages {39}{39}}
-\headcommand {\beamer@subsectionpages {39}{39}}
-\headcommand {\sectionentry {6}{References}{40}{References}{0}}
-\headcommand {\slideentry {6}{0}{0}{40/40}{}{0}}
+\headcommand {\slideentry {3}{1}{1}{17/22}{Correspondência de soluções válidas}{0}}
+\headcommand {\beamer@framepages {17}{22}}
+\headcommand {\beamer@subsectionpages {17}{22}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{23}{Correspondência de facetas}}
+\headcommand {\slideentry {3}{2}{1}{23/28}{Correspondência de facetas}{0}}
+\headcommand {\beamer@framepages {23}{28}}
+\headcommand {\beamer@subsectionpages {23}{28}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{29}{Exemplo de aplicação}}
+\headcommand {\slideentry {3}{3}{1}{29/32}{Exemplo de aplicação}{0}}
+\headcommand {\beamer@framepages {29}{32}}
+\headcommand {\beamer@sectionpages {17}{32}}
+\headcommand {\beamer@subsectionpages {29}{32}}
+\headcommand {\sectionentry {4}{Facetas de ciclos negativos}{33}{Facetas de ciclos negativos}{0}}
+\headcommand {\beamer@subsectionpages {33}{32}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{33}{Ciclos com uma aresta negativa}}
+\headcommand {\slideentry {4}{1}{1}{33/33}{Ciclos com uma aresta negativa}{0}}
+\headcommand {\beamer@framepages {33}{33}}
+\headcommand {\beamer@subsectionpages {33}{33}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{34}{Ciclos negativos arbitrários}}
+\headcommand {\slideentry {4}{2}{1}{34/39}{Ciclos negativos arbitrários}{0}}
+\headcommand {\beamer@framepages {34}{39}}
+\headcommand {\beamer@sectionpages {33}{39}}
+\headcommand {\beamer@subsectionpages {34}{39}}
+\headcommand {\slideentry {5}{0}{1}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@partpages {1}{40}}
-\headcommand {\beamer@subsectionpages {39}{40}}
-\headcommand {\beamer@sectionpages {39}{40}}
-\headcommand {\beamer@documentpages {40}}
+\headcommand {\beamer@sectionpages {40}{40}}
+\headcommand {\beamer@subsectionpages {40}{40}}
+\headcommand {\sectionentry {6}{References}{41}{References}{0}}
+\headcommand {\slideentry {6}{0}{0}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {1}{41}}
+\headcommand {\beamer@subsectionpages {40}{41}}
+\headcommand {\beamer@sectionpages {40}{41}}
+\headcommand {\beamer@documentpages {41}}
 \headcommand {\gdef \inserttotalframenumber {16}}
