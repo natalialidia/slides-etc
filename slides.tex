@@ -226,9 +226,8 @@
     \pause
 
     \begin{lemma} \label{lem:points}
-        $(x_S,x_{\bar S},y)$ é um ponto inteiro em $\PxG$ $\iff$ $(\e-x_S,x_{\bar S},y)$ é um ponto inteiro em $\Px(G^S)$.
+        $(x_S,x_{\bar S},y)$ é um ponto inteiro em $\PxG$ $\iff$ $(\m{1}-x_S,x_{\bar S},y)$ é um ponto inteiro em $\Px(G^S)$.
     \end{lemma}
-    \pause
 
     \begin{figure}[h]
         \centering
@@ -237,10 +236,12 @@
     \end{figure}
     
     \vspace{-0.8em}
-    \only<6>{
+    \only<5>{
         \begin{lemma} \label{lem:AI}
-            Seja $L\subseteq \{1,\ldots,n+m+1\}$,
-            $\{(x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\PxG$ $\iff$ $\{(\e-x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\Px(G^S)$.
+            % Seja $L\subseteq \{1,\ldots,n+m+1\}$,
+            % $\{(x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\PxG$ $\iff$ $\{(\e-x^\ell_S,x^\ell_{\bar S},y^\ell): \ell\in L\}$ é A.I. em $\Px(G^S)$.
+            Um conjunto de pontos da forma $(x_S,x_{\bar S},y)$ é A.I. em $\PxG$ $\iff$
+            $(\m{1} - x_S,x_{\bar S},y)$ é A.I. em $\Px(G^S)$.
         \end{lemma}
     }
 \end{frame}
@@ -248,23 +249,25 @@
 \subsection{Correspondência de facetas}
 \begin{frame}
     
+    Sejam $S\subseteq V(G)$, $\bar S=V(G)\setminus S$\\[0.5em]
+    e $L_G(x,y) = \pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda_{E(G)} y_{E(G)}$:
+    
+    \pause
     \begin{proposition}\label{prop:valid}
-        Sejam $S\subseteq V$ e $\bar S=V\setminus S$:\\[0.5em]
-        \pause
         \begin{itemize}
-            \item $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda y \leq \pi_0$ é válida para $\PxG$ $\iff $ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda y \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
+            \item $L_G(x_S, x_{\bar S},y) \leq \pi_0$ é válida para $\PxG$ $\iff $ $L_G(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
             \pause
             \item A primeira desigualdade induz faceta de $\PxG$ $\iff$ a segunda induz faceta de $\Px(G^S)$.
         \end{itemize}
     \end{proposition}
     \pause
+    Sejam $H$ e $S\subseteq V(H)$ e $\bar S=V(H)\setminus S$:
+    \pause
     \begin{theorem}\label{teo:valid-comutacao-parcial}
-        Sejam $H$ e $S\subseteq V(H)$ e $\bar S=V(H)\setminus S$:\\[0.5em]
-        \pause
         \begin{itemize}
             \item $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $G'$. \\[0.5em]
             \pause
-            \item $\pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda_{E(H)} y_{E(H)} \leq \pi_0$ induz faceta de $\PxG$ $\iff$ $\pi_S(\e -x_S) + \pi_{\bar S} x_{\bar S} +  \lambda_{E(H)} y_{E(H)} \leq \pi_0$ induz faceta de $\Px(G')$.
+            \item $L_H(x_S, x_{\bar S},y) \leq \pi_0$ induz faceta de $\PxG$ $\iff$ $L_H(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ induz faceta de $\Px(G')$.
         \end{itemize}
     \end{theorem}
 

@@ -1843,6 +1843,9 @@ INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 INPUT /usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
 INPUT ./slides.aux
@@ -2160,10 +2163,6 @@ INPUT ./figures/sol-comut.tex
 INPUT figures/sol-comut.tex
 INPUT ./figures/sol-comut.tex
 INPUT figures/sol-comut.tex
-INPUT ./figures/sol-comut.tex
-INPUT figures/sol-comut.tex
-INPUT ./figures/sol-comut.tex
-INPUT figures/sol-comut.tex
 INPUT ./figures/comut-aresta.tex
 INPUT figures/comut-aresta.tex
 INPUT ./figures/comut-aresta.tex
@@ -2259,7 +2258,6 @@ INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb

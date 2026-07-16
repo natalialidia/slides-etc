@@ -2,7 +2,7 @@
 \begin{tikzpicture}[scale=0.85,draw=black, color=black]
 	\pgfsetlinewidth{1pt}
 
-    \only<3>{
+    \only<2>{
         \begin{scope}[shift={(0,0)}]
         
             \filldraw[fill=gray!10, draw=black!90, rounded corners] (-2.25,0) rectangle (-0.75,3);
@@ -12,9 +12,9 @@
 
             \filldraw[fill opacity=0, draw=black, black, dotted, rounded corners] (-2.35,1.9) rectangle (2.35,3.1);
 
-            \filldraw[pattern=north west lines, pattern color=red, draw=red, dotted, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
+            \filldraw[pattern=north west lines, pattern color=red, draw=red, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
 
-            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (2.25,1.9) rectangle (0.75,3);
+            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, rounded corners] (2.25,1.9) rectangle (0.75,3);
 
             % \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (-2.25,0) rectangle (-0.75,1.1);
 
@@ -29,6 +29,7 @@
             \draw[blue, line width=1.2] (-1.5,1.9) edge node [midway, left] {$+$} (-1.5,1.1);
             \draw[blue, line width=1.2] (1.5,1.9) edge node [midway, right] {$+$} (1.5,1.1);
             
+            % \node[font=\bfseries] at (0,3.7) {$(x_S, x_{\bar S}, y) \in \PxG$};
 
             % \node[font=\bfseries] at (-2,2.8) {A};
             % \node[font=\bfseries, fill=white] at (-1.5,2.4) {$+$};
@@ -67,7 +68,7 @@
 
         \end{scope}
     }
-    \only<4>{
+    \only<3-5>{
         \begin{scope}[shift={(0,0)}]
         
             \filldraw[fill=gray!10, draw=black!90, rounded corners] (-2.25,0) rectangle (-0.75,3);
@@ -77,9 +78,9 @@
 
             \filldraw[fill opacity=0, draw=black, black, dotted, rounded corners] (-2.35,1.9) rectangle (2.35,3.1);
 
-            \filldraw[pattern=north west lines, pattern color=red, draw=red, dotted, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
+            \filldraw[pattern=north west lines, pattern color=red, draw=red, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
 
-            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (2.25,1.9) rectangle (0.75,3);
+            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, rounded corners] (2.25,1.9) rectangle (0.75,3);
 
             % \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (-2.25,0) rectangle (-0.75,1.1);
 
@@ -94,6 +95,7 @@
             \draw[red, line width=1.2] (-1.5,1.9) edge node [midway, left] {$-$} (-1.5,1.1);
             \draw[red, line width=1.2] (1.5,1.9) edge node [midway, right] {$-$} (1.5,1.1);
             
+            % \node[font=\bfseries] at (0,3.7) {$(x_S, x_{\bar S}, y) \notin \Px(G^S)$};
 
             % \node[font=\bfseries] at (-2,2.8) {A};
             % \node[font=\bfseries, fill=white] at (-1.5,2.4) {$+$};
@@ -132,8 +134,11 @@
 
         \end{scope}   
     }
-    \only<5-6>{
-        \begin{scope}[shift={(0,0)}]
+    \only<4-5>{
+        \begin{scope}[shift={(8,0)}]
+
+            \node[font=\bfseries] at (-3.75,2) {$(\m{1}-x_S)$};
+            \draw[-Stealth] (-4.5,1.5) -- (-3,1.5);
         
             \filldraw[fill=gray!10, draw=black!90, rounded corners] (-2.25,0) rectangle (-0.75,3);
             \filldraw[fill=gray!10, draw=black!90, rounded corners] (0.75,0) rectangle (2.25,3);
@@ -142,9 +147,9 @@
 
             \filldraw[fill opacity=0, draw=black, black, dotted, rounded corners] (-2.35,1.9) rectangle (2.35,3.1);
 
-            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
+            \filldraw[pattern=north west lines, pattern color=blue, draw=blue, rounded corners] (-2.25,1.9) rectangle (-0.75,3);
 
-            \filldraw[pattern=north west lines, pattern color=red, draw=red, dotted, rounded corners] (2.25,1.9) rectangle (0.75,3);
+            \filldraw[pattern=north west lines, pattern color=red, draw=red, rounded corners] (2.25,1.9) rectangle (0.75,3);
 
             % \filldraw[pattern=north west lines, pattern color=blue, draw=blue, dotted, rounded corners] (-2.25,0) rectangle (-0.75,1.1);
 
@@ -159,6 +164,7 @@
             \draw[red, line width=1.2] (-1.5,1.9) edge node [midway, left] {$+$} (-1.5,1.1);
             \draw[red, line width=1.2] (1.5,1.9) edge node [midway, right] {$+$} (1.5,1.1);
             
+            % \node[font=\bfseries] at (0,3.7) {$(\m{1} - x_S, x_{\bar S}, y) \in \Px(G^S)$};
 
             % \node[font=\bfseries] at (-2,2.8) {A};
             % \node[font=\bfseries, fill=white] at (-1.5,2.4) {$+$};
