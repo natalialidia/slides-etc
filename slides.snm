@@ -6,10 +6,8 @@
 \beamer@slide {eq:neg2}{11}
 \beamer@slide {eq:ybin}{11}
 \beamer@slide {NEC}{12}
-\beamer@slide {prop:facetax-trivial}{14}
-\beamer@slide {lem:sub-ind}{16}
-\beamer@slide {lem:points}{17}
-\beamer@slide {prop:valid}{22}
-\beamer@slide {teo:valid-comutacao-parcial}{22}
-\beamer@slide {lem:ciclo1}{32}
-\beamer@slide {eq:ciclo1}{32}
+\beamer@slide {lem:sub-ind}{14}
+\beamer@slide {lem:points}{16}
+\beamer@slide {teo:valid-comutacao-parcial}{21}
+\beamer@slide {lem:ciclo1}{29}
+\beamer@slide {eq:ciclo1}{29}

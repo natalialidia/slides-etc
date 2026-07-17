@@ -202,21 +202,25 @@
         O politopo $\PxG$ tem dimensão cheia.    \\[0.5em]
     \end{theorem}
 
-    \begin{proposition} \label{prop:facetax-trivial}
-        {Para todo $u\in V(G)$, $x_u\geq 0$ e $x_u\leq 1$ induzem faceta de $\PxG$.}\\[0.5em]
-    \end{proposition}
+    % \begin{proposition} \label{prop:facetax-trivial}
+    %     {Para todo $u\in V(G)$, $x_u\geq 0$ e $x_u\leq 1$ induzem faceta de $\PxG$.}\\[0.5em]
+    % \end{proposition}
 
-    \begin{proposition}
-        Para todo $uv\in E(G)$, $y_{uv}\leq 1$ induz faceta de $\PxG$.\\[0.5em]
-    \end{proposition}
+    % \begin{proposition}
+    %     Para todo $uv\in E(G)$, $y_{uv}\leq 1$ induz faceta de $\PxG$.\\[0.5em]
+    % \end{proposition}
+
+    \begin{lemma}\label{lem:sub-ind}
+        Seja $H$ um subgrafo de $G$. Uma desigualdade é indutora de faceta de $\Px(H)$ se, e somente se, ela também induz faceta de $\PxG$.\\[1em]
+    \end{lemma}
         
 \end{frame}
 
-\begin{frame}
-    \begin{lemma}\label{lem:sub-ind}
-        Seja $H$ um subgrafo de $G$. A desigualdade $\sum\limits_{v\in V(H)}\lambda_vx_v+\sum\limits_{e\in E(H)}\rho_{e}y_e\geq \lambda_0$ define faceta de $\Px(H)$ se, e somente se, ela também define faceta de $\PxG$.\\[1em]
-    \end{lemma}
-\end{frame}
+% \begin{frame}
+%     \begin{lemma}\label{lem:sub-ind}
+%         Seja $H$ um subgrafo de $G$. A desigualdade $\sum\limits_{v\in V(H)}\lambda_vx_v+\sum\limits_{e\in E(H)}\rho_{e}y_e\geq \lambda_0$ define faceta de $\Px(H)$ se, e somente se, ela também define faceta de $\PxG$.\\[1em]
+%     \end{lemma}
+% \end{frame}
 
 \section{Obtendo facetas via comutação}
 \subsection{Correspondência de soluções válidas}
@@ -249,25 +253,28 @@
 \subsection{Correspondência de facetas}
 \begin{frame}
     
-    Sejam $S\subseteq V(G)$, $\bar S=V(G)\setminus S$\\[0.5em]
-    e $L_G(x,y) = \pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda_{E(G)} y_{E(G)}$:
+    % Sejam $S\subseteq V(G)$, $\bar S=V(G)\setminus S$\\[0.5em]
     
-    \pause
-    \begin{proposition}\label{prop:valid}
-        \begin{itemize}
-            \item $L_G(x_S, x_{\bar S},y) \leq \pi_0$ é válida para $\PxG$ $\iff $ $L_G(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
-            \pause
-            \item A primeira desigualdade induz faceta de $\PxG$ $\iff$ a segunda induz faceta de $\Px(G^S)$.
-        \end{itemize}
-    \end{proposition}
-    \pause
-    Sejam $H$ e $S\subseteq V(H)$ e $\bar S=V(H)\setminus S$:
+    % \pause
+    % \begin{proposition}\label{prop:valid}
+    %     \begin{itemize}
+    %         \item $L_G(x_S, x_{\bar S},y) \leq \pi_0$ é válida para $\PxG$ $\iff $ $L_G(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ é válida para $\Px(G^S)$.\\[0.5em]
+    %         \pause
+    %         \item A primeira desigualdade induz faceta de $\PxG$ $\iff$ a segunda induz faceta de $\Px(G^S)$.
+    %     \end{itemize}
+    % \end{proposition}
+    % \pause
+    Sejam $H$ e $S\subseteq V(H)$ e $\bar S=V(H)\setminus S$\\[0.5em]
+    e $L_H(x,y) = \pi_S x_S + \pi_{\bar S} x_{\bar S} + \lambda_{E(H)} y_{E(H)}$:
     \pause
     \begin{theorem}\label{teo:valid-comutacao-parcial}
         \begin{itemize}
-            \item $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $G'$. \\[0.5em]
+            \item $L_H(x_S, x_{\bar S},y) \leq \pi_0$ é válida para $\Px(H)$ $\iff $ $L_H(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ é válida para $\Px(H^S)$.\\[0.5em]
+            % \item A primeira induz faceta de $\Px(H)$ $\iff$ a segunda induz faceta de $\Px(H^S)$.
             \pause
-            \item $L_H(x_S, x_{\bar S},y) \leq \pi_0$ induz faceta de $\PxG$ $\iff$ $L_H(\m{1} -x_S,x_{\bar S},y) \leq \pi_0$ induz faceta de $\Px(G')$.
+            \item $H$ é subgrafo de $G$ e $H^S$ é subgrafo de $G'$.
+            \pause
+            \item A primeira desigualdade induz faceta de $\PxG$ $\iff$ a segunda induz faceta de $\Px(G')$.
         \end{itemize}
     \end{theorem}
 
