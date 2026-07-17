@@ -9,7 +9,7 @@
 \beamer@sectionintoc {3}{Obtendo facetas via comutação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 9}{16}{0}{3}
 \beamer@subsectionintoc {3}{1}{Correspondência de soluções válidas\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 9}{16}{0}{3}
 \beamer@subsectionintoc {3}{2}{Correspondência de facetas\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 10}{21}{0}{3}
-\beamer@subsectionintoc {3}{3}{Exemplo de aplicação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 11}{25}{0}{3}
-\beamer@sectionintoc {4}{Facetas de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 12}{29}{0}{4}
-\beamer@subsectionintoc {4}{1}{Ciclos com uma aresta negativa\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 12}{29}{0}{4}
-\beamer@subsectionintoc {4}{2}{Ciclos negativos arbitrários\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{30}{0}{4}
+\beamer@subsectionintoc {3}{3}{Exemplo de aplicação\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 11}{24}{0}{3}
+\beamer@sectionintoc {4}{Facetas de ciclos negativos\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 12}{28}{0}{4}
+\beamer@subsectionintoc {4}{1}{Ciclos com uma aresta negativa\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 12}{28}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ciclos negativos arbitrários\unhbox \voidb@x \cleaders \hbox to0.8em{\hss .\hss }\hfill \kern \z@ 13}{29}{0}{4}

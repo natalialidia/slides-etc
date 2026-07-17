@@ -1,13 +1,13 @@
 # Fdb version 3
-["biber slides"] 1784175247 "slides.bcf" "slides.bbl" "slides" 1784252079
+["biber slides"] 1784312307 "slides.bcf" "slides.bbl" "slides" 1784312321
   "references.bib" 1783538612 13156 64c7cf5da6a43877f4c51b43d6ee91e9 ""
-  "slides.bcf" 1784252078 124224 41a2a029868f33543e3108c9c2507eca "pdflatex"
+  "slides.bcf" 1784312321 124224 41a2a029868f33543e3108c9c2507eca "pdflatex"
   (generated)
   "slides.bbl"
   "slides.blg"
-["pdflatex"] 1784252074 "/home/natalia/Documentos/slides-etc/slides.tex" "slides.pdf" "slides" 1784252079
+["pdflatex"] 1784312317 "/home/natalia/Documentos/slides-etc/slides.tex" "slides.pdf" "slides" 1784312321
   "/etc/texmf/web2c/texmf.cnf" 1753421008 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/natalia/Documentos/slides-etc/slides.tex" 1784252074 12319 2579f511035d3b3cad24c37cddec9116 ""
+  "/home/natalia/Documentos/slides-etc/slides.tex" 1784312302 12409 36cf05512b7e87d3b8a81324e124c9b9 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1136768653 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
@@ -371,13 +371,13 @@
   "figures/signed-graph-ex.tex" 1783538612 1361 146c5d0f93921e714c9400c401427d22 ""
   "figures/sol-comut.tex" 1784173020 10749 ad31053fabeae6ac9b6e86f1ec5dc286 ""
   "loadslides.tex" 1784171611 7673 ff8c2ef1903954f3d8cc8d4cb4f91560 ""
-  "slides.aux" 1784252078 11840 cc0b8d8bea177e330eeddf69a8520819 "pdflatex"
-  "slides.bbl" 1784175248 6176 4c4fe39831c73c4e4734e045a0711973 "biber slides"
-  "slides.nav" 1784252078 4407 640d8d828828f2e88936271478549bbb "pdflatex"
-  "slides.out" 1784252078 2914 42a52ca704b042c8647166e4deb548a9 "pdflatex"
-  "slides.run.xml" 1784252078 2475 595bdd7a02f15d42b25874d933f14267 "pdflatex"
-  "slides.tex" 1784252074 12319 2579f511035d3b3cad24c37cddec9116 ""
-  "slides.vrb" 1784252076 389 ffa361ddfa2d6e32c20c0cca876a3645 "pdflatex"
+  "slides.aux" 1784312321 11840 e2dfc7375ec698b32d8627ed60922bdb "pdflatex"
+  "slides.bbl" 1784312308 6176 4c4fe39831c73c4e4734e045a0711973 "biber slides"
+  "slides.nav" 1784312321 4407 bac9d2178ee21d8d3b9d3f4721cc1f75 "pdflatex"
+  "slides.out" 1784312321 2914 58db0e0412af184b8b44987aa972d00a "pdflatex"
+  "slides.run.xml" 1784312321 2475 595bdd7a02f15d42b25874d933f14267 "pdflatex"
+  "slides.tex" 1784312302 12409 36cf05512b7e87d3b8a81324e124c9b9 ""
+  "slides.vrb" 1784312318 389 ffa361ddfa2d6e32c20c0cca876a3645 "pdflatex"
   "styles/beamercolorthemeelegant.sty" 1783538612 3878 4258af8fbaca016dcbc75e52902c48e7 ""
   "styles/beamerfontthemeelegant.sty" 1783538612 988 66866602cbc9a3f68add9d224432215f ""
   "styles/beamerinnerthemeelegant.sty" 1783538612 5654 a25b4beaff04248dcecd04a3837d74e5 ""

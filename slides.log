@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.4)  16 JUL 2026 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.4)  17 JUL 2026 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1399,7 +1399,7 @@ Overfull \vbox (1.96278pt too high) detected at line 178
 
 ] [23
 
-] [24
+] (./figures/comut-aresta.tex) [24
 
 ] (./figures/comut-aresta.tex) [25
 
@@ -1407,9 +1407,9 @@ Overfull \vbox (1.96278pt too high) detected at line 178
 
 ] (./figures/comut-aresta.tex) [27
 
-] (./figures/comut-aresta.tex) [28
+] [28
 
-] [29
+] (./figures/ciclo-comut-ex.tex) [29
 
 ] (./figures/ciclo-comut-ex.tex) [30
 
@@ -1421,36 +1421,34 @@ Overfull \vbox (1.96278pt too high) detected at line 178
 
 ] (./figures/ciclo-comut-ex.tex) [34
 
-] (./figures/ciclo-comut-ex.tex) [35
-
 ]
-<figures/logopqno.png, id=435, 376.607pt x 463.331pt>
+<figures/logopqno.png, id=427, 376.607pt x 463.331pt>
 File: figures/logopqno.png Graphic file (type png)
 <use figures/logopqno.png>
-Package pdftex.def Info: figures/logopqno.png  used on input line 367.
+Package pdftex.def Info: figures/logopqno.png  used on input line 371.
 (pdftex.def)             Requested size: 34.68619pt x 42.67912pt.
-<figures/mdcc-cabecalho.png, id=436, 246.9225pt x 72.27pt>
+<figures/mdcc-cabecalho.png, id=428, 246.9225pt x 72.27pt>
 File: figures/mdcc-cabecalho.png Graphic file (type png)
 <use figures/mdcc-cabecalho.png>
-Package pdftex.def Info: figures/mdcc-cabecalho.png  used on input line 367.
+Package pdftex.def Info: figures/mdcc-cabecalho.png  used on input line 371.
 (pdftex.def)             Requested size: 68.04893pt x 19.91684pt.
 File: figures/pargo.png Graphic file (type png)
 <use figures/pargo.png>
-Package pdftex.def Info: figures/pargo.png  used on input line 367.
+Package pdftex.def Info: figures/pargo.png  used on input line 371.
 (pdftex.def)             Requested size: 67.68631pt x 19.91684pt.
-<figures/funcap.png, id=437, 474.3321pt x 317.0244pt>
+<figures/funcap.png, id=429, 474.3321pt x 317.0244pt>
 File: figures/funcap.png Graphic file (type png)
 <use figures/funcap.png>
-Package pdftex.def Info: figures/funcap.png  used on input line 367.
+Package pdftex.def Info: figures/funcap.png  used on input line 371.
 (pdftex.def)             Requested size: 29.79767pt x 19.91684pt.
-<figures/cnpq.png, id=438, 598.3956pt x 597.432pt>
+<figures/cnpq.png, id=430, 598.3956pt x 597.432pt>
 File: figures/cnpq.png Graphic file (type png)
 <use figures/cnpq.png>
-Package pdftex.def Info: figures/cnpq.png  used on input line 367.
+Package pdftex.def Info: figures/cnpq.png  used on input line 371.
 (pdftex.def)             Requested size: 42.74112pt x 42.67912pt.
- [36
+ [35
 
- <./figures/logopqno.png> <./figures/mdcc-cabecalho.png> <./figures/funcap.png> <./figures/cnpq.png>] [37
+ <./figures/logopqno.png> <./figures/mdcc-cabecalho.png> <./figures/funcap.png> <./figures/cnpq.png>] [36
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/beamericonarticle.pdf>]
 \tf@nav=\write7
@@ -1464,24 +1462,24 @@ Package pdftex.def Info: figures/cnpq.png  used on input line 367.
 
  (./slides.aux)
 Package rerunfilecheck Info: File `slides.out' has not changed.
-(rerunfilecheck)             Checksum: 42A52CA704B042C8647166E4DEB548A9;2914.
+(rerunfilecheck)             Checksum: 58DB0E0412AF184B8B44987AA972D00A;2914.
 Package logreq Info: Writing requests to 'slides.run.xml'.
 \openout1 = `slides.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51454 strings out of 478287
- 1187913 string characters out of 5849290
+ 51461 strings out of 478287
+ 1188087 string characters out of 5849290
  2020179 words of memory out of 5000000
- 68537 multiletter control sequences out of 15000+600000
+ 68546 multiletter control sequences out of 15000+600000
  516701 words of font info for 102 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,2081b,5160s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on slides.pdf (37 pages, 898656 bytes).
+Output written on slides.pdf (36 pages, 896947 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 449 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 437 compressed objects within 5 object streams
+ 107 named destinations out of 1000 (max. 500000)
  213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
